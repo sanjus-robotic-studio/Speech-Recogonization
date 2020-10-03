@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/index.css')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Speech Recogonition using Flask</title>
+</head>
+<body>
+{% if transcript == "" %}
+
+<h1 align="center">Speech 2 Text Online Converter tool</h1>
+    <div id="choosefile" >
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" id="file" class="inputfile" />
+    <label for="file" id="file"  >
+        <i class="material-icons">cloud_upload</i>&nbsp Choose a file</label>
+    <br>
+    <br>
+    <br>
+    <input type="submit" id="submit" value="Transcribe" />
+</form>
+</div>
+{% endif %}
+{% if transcript != "" %}
+<div id="transcript">
+    <h1>Transcript</h1>
+    <p id="text">{{transcript}}</p>
+    <br>
+    <br>
+    <input type='button' onclick='location.href= "/";' id="reload" value='Transcribe Another' />
+{% endif %}
+</div>
+</body>
+<script>
+    let Caption;
+    function Button1_Click() {
+    document.getElementById('Button1').value = Caption;
+    if (0 === Caption) {
+        Caption = 1;
+    } else {
+        Caption= 0;
+    }
+}
+</script>
+</html>

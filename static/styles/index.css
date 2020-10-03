@@ -1,0 +1,102 @@
+h1{
+   font-family: 'Sansita Swashed', cursive;
+	text-align: center;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+	text-align: justify-all;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+
+
+
+#choosefile{
+	padding-top: 30px;
+}
+
+#transcript{
+	align-items: center;
+	padding-top: 20px;
+}
+
+#submit{
+	Background-color: #0191fe;
+	color:#ffffff;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 30px;
+	font-family: 'Source Sans Pro', sans-serif;
+	position: absolute;
+	alignment: center;
+	margin-top: 10%;
+    margin-left: 40%;
+	font-size: 24px;
+}
+
+#submit:hover{
+	cursor: pointer;
+	Background-color: #0372c2;
+}
+
+#file{
+	font-family: 'Source Sans Pro', sans-serif;
+	position: absolute;
+	padding-left: 5px;
+	padding-right: 5px;
+	Background-color: #0191fe;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	align: center;
+	font-size: 28px;
+	display: flex;
+	margin-left: 40%;
+	margin-top: 0;
+}
+
+.material-icons{
+	color: white;
+}
+
+#text{
+	font-family: 'Source Sans Pro', sans-serif;
+	alignment: center;
+}
+
+#reload {
+	Background-color: #0191fe;
+	color:#ffffff;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 30px;
+    margin: auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	position: absolute;
+	alignment: center;
+
+}
+
+#reload:hover{
+	cursor: pointer;
+	Background-color: #0372c2;
+}
+
+#or{
+	margin-left: 45%;
+	margin-top: 30%;
+	alignment: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 24px;
+
+
+}
